@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - EmployeeTrackingMap</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/icon" />
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header" style="padding-right: 10px;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    @*@Html.ActionLink("Employee Tracking Map", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+                    <span>
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="~/Content/images/logo.png" alt="Logo Image" class="img-responsive pull-left" width="60" height="50" style="padding-right: 10px; padding-top:2.5px;" data_toggle="tooltip" data_placement="top" title="Home Page" />
+                            @Html.ActionLink("Employee Tracking Map", "Index", "Home", new { area = "" }, new { @class = "navbar-brand", id = "brand" })
+                        </a>
+                    </span>
+                </div>
+
+                <div class="navbar-collapse collapse">
+
+                    @*@if (Request.IsAuthenticated)
+                        {*@
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Company
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Search Company", "Index", "Company")</li>
+                                <li>@Html.ActionLink("Add Company", "Create", "Company")</li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Employee
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Search Employee", "Create", "Employee")</li>
+                                <li>@Html.ActionLink("Add Employee", "Create", "Employee")</li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Office
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Search Office", "Create", "Office")</li>
+                                <li>@Html.ActionLink("Add Office", "Create", "Office")</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    @*}*@
+
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+
+            @RenderBody()
+
+            @*<footer class="navbar navbar-default navbar-fixed-bottom">
+                <p>&copy; @DateTime.Now.Year - Created by Marmaras G.</p>
+            </footer>*@
+
+            <!-- Footer -->
+            <footer class="container-fluid text-center footer navbar-fixed-bottom">
+                <span>&copy; @DateTime.Now.Year - Created by Marmaras G.</span>
+            </footer>
+
+
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+    @*Tooltips*@
+    <script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
+</body>
+</html>

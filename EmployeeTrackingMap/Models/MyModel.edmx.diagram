@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="29743840598b48b4aa8e66c8fb763607" Name="Diagram1">
+        <EntityTypeShape EntityType="EmployeeTrackingMapModel.Company" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrackingMapModel.Employee" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrackingMapModel.Office" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmployeeTrackingMapModel.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="EmployeeTrackingMapModel.FK_Employee_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrackingMapModel.FK_Office_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="EmployeeTrackingMapModel.FK_Employee_Office" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

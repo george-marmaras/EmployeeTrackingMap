@@ -1,0 +1,124 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+ footer{
+     color: #FFFFFF;
+     background-color: #2C3E50;
+ }
+
+/*table crud button styles*/
+.delete {
+    color: #E74C3C;
+}
+.edit {
+    color: #7CBF9D;
+}
+.info {
+    color: #808080;
+}
+.create{
+    color: #0F7864;
+}
+.create:hover{
+    color: #579774;
+}
+.edit:hover {
+  color: #8AD8AF;
+}
+.info:hover {
+  color: #ADADAD;
+}
+.delete:hover {
+  color: #FF4C47;
+}
+
+.search2{
+    padding-bottom: 20px;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #ffffff;
+  cursor: default;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+}
+
+.thead{
+    background-color: #D3D3D3;
+    color: #000000;
+}
+
+/*.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,*/
+/*.table-bordered > tbody > tr > td.lala {
+  border: 0px solid #FFFFFF;
+  border-left-width: 0px !important;
+  border-right-width: 0px !important;
+}*/
+
+#brand{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.table-responsive
+{
+    overflow-x: auto;
+}
+
+.table-responsive td, .table-responsive th { white-space:nowrap; }
+
+ table { 
+     table-layout: fixed; 
+     border-collapse: collapse;
+     border-spacing: 0;
+     width: 100%;
+ }
+
+ table th, table td { 
+     overflow: hidden;
+     text-overflow: ellipsis
+ }
+
+ .table-borderless {
+     width:75px;
+ }
+
+ /*//for the hover tootlips inside table elements when they hide*/
+.ellipsisTip {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+/*end*/
